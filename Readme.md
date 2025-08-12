@@ -18,7 +18,9 @@
 <img src="https://halitsever-api.vercel.app/api/details"/>
 </p>
 
-- [**Use infinite Tempmail**](#) - via temp mail plus
+- 💌 [**Create temp mails**](#) - via temp mail plus
+- 📩 [**Easy usage**](#) - Create & read temp mails easily
+
 <p align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
 </p>
