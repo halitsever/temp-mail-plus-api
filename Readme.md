@@ -18,13 +18,32 @@
 <img src="https://halitsever-api.vercel.app/api/details"/>
 </p>
 
-- 🧑‍💻 [**TODO**](#) - update docs
-
+- [**Use infinite Tempmail**](#) - via temp mail plus
 <p align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
 </p>
 
-Todo: update docs
+Fetching inbox by email:
+
+```javascript
+import TempMail from "temp-mail-plus-api";
+const tempMail = new TempMail("halit@rover.info");
+const inbox = await tempMail.fetchInbox();
+```
+
+Fetching mail content by `mail_id`:
+
+```javascript
+const mailId = 32944585;
+await tempMail.fetchMailById(mailId);
+```
+
+Get all mail domains:
+
+```javascript
+const mails = tempMail.getMailDomains();
+console.log(mails);
+```
 
 <p align="center" href="https://github.com/halitsever/repo_name/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
@@ -39,5 +58,5 @@ Todo: update docs
 </p>
 
 <p align="center">
-  ...
+  MIT LICENSE - <a href="https://halit.org">Halit Sever</a>
 </p>

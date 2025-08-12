@@ -1,14 +1,27 @@
 {
   "name": "temp-mail-plus-api",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/src/index.js",
+  "license": "MIT",
+  "repository": "https://github.com/halitsever/temp-mail-plus-api.git",
   "scripts": {
     "build": "tsc",
     "test": "node --import  tsx  --test test/*.ts"
   },
-  "keywords": [],
-  "author": "",
-  "description": "",
+  "keywords": [
+    "temp-mail",
+    "temp",
+    "mail",
+    "temporary-mail",
+    "temporary-mail-api",
+    "temporary-mail-api-wrapper",
+    "plus",
+    "tempmail",
+    "tempmail-plus",
+    "tempmailplus"
+  ],
+  "author": "Halit Sever <halitsever@protonmail.com>",
+  "description": "📨 API Wrapper for Temp Mail Plus service",
   "dependencies": {
     "axios": "^1.11.0"
   },
