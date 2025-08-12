@@ -1,10 +1,10 @@
 <p align="center" class="logo-section">
-<img src="https://i.ibb.co/NrPh9xP/image.png" height="80" width="80"/>
+<img src="https://i.ibb.co/j9FFpf8p/image.png" height="80" width="80"/>
 </br>
-<img src="https://halitsever-api.vercel.app/api/repo-title?title=repo_name">
+<img src="https://halitsever-api.vercel.app/api/repo-title?title=Temp+Mail+Plus+API">
 
 <p align="center">
-✋ Coming soon...<br>
+📨 API Wrapper for Temp Mail Plus service<br>
 <br/>
 <br/>
 <img src="https://img.shields.io/github/sponsors/halitsever"/>
