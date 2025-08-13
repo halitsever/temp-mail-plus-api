@@ -1,6 +1,19 @@
 import HttpClient from "./http.client";
 import { InboxResponse, MailResponse } from "./types";
 
+
+export const TEMP_MAIL_DOMAINS = [
+    "mailto.plus",
+    "fexpost.com",
+    "fexbox.org",
+    "mailbox.in.ua",
+    "rover.info",
+    "chitthi.in",
+    "fextemp.com",
+    "any.pink",
+    "merepost.com"
+] as const;
+
 export default class TempMailInstance {
     private readonly httpClient: HttpClient;
 
@@ -34,23 +47,5 @@ export default class TempMailInstance {
         catch (error) {
             return { error, success: false }
         }
-    }
-
-    static getMailDomains(): string[] {
-        return [
-            "mailto.plus",
-            "fexpost.com",
-            "fexbox.org",
-            "mailbox.in.ua",
-            "rover.info",
-            "chitthi.in",
-            "fextemp.com",
-            "any.pink",
-            "merepost.com"
-        ];
-    }
-
-    getMailDomains(): string[] {
-        return this.getMailDomains();
     }
 }

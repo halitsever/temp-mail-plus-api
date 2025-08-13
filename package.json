@@ -1,6 +1,6 @@
 {
   "name": "temp-mail-plus-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "dist/src/index.js",
   "license": "MIT",
   "repository": "https://github.com/halitsever/temp-mail-plus-api.git",

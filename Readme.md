@@ -43,8 +43,8 @@ await tempMail.fetchMailById(mailId);
 Get all mail domains:
 
 ```javascript
-const mails = tempMail.getMailDomains();
-console.log(mails);
+import TempMail, { TEMP_MAIL_DOMAINS } from "temp-mail-plus-api";
+console.log(TEMP_MAIL_DOMAINS);
 ```
 
 <p align="center" href="https://github.com/halitsever/repo_name/issues">
