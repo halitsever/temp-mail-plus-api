@@ -20,10 +20,28 @@
 
 - 💌 [**Create temp mails**](#) - via temp mail plus
 - 📩 [**Easy usage**](#) - Create & read temp mails easily
+- 🗑️ [**Delete mails**](#) - Delete individual mails from your inbox
 
 <p align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
 </p>
+
+Generate a random email address:
+
+```javascript
+import TempMail from "temp-mail-plus-api";
+
+// random username, random domain
+const { email } = TempMail.generateEmail();
+
+// custom username
+const { email } = TempMail.generateEmail("halit");
+
+// custom username + domain
+const { email } = TempMail.generateEmail("halit", "fexpost.com");
+
+const tempMail = new TempMail(email);
+```
 
 Fetching inbox by email:
 
@@ -40,11 +58,23 @@ const mailId = 32944585;
 await tempMail.fetchMailById(mailId);
 ```
 
+Deleting a mail by `mail_id`:
+
+```javascript
+await tempMail.deleteMailById(mailId);
+```
+
 Get all mail domains:
 
 ```javascript
 import TempMail, { TEMP_MAIL_DOMAINS } from "temp-mail-plus-api";
 console.log(TEMP_MAIL_DOMAINS);
+```
+
+Custom timeout (default: 10s):
+
+```javascript
+const tempMail = new TempMail("halit@rover.info", { timeout: 5000 });
 ```
 
 <p align="center" href="https://github.com/halitsever/repo_name/issues">
