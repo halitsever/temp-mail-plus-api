@@ -1,4 +1,5 @@
 import axios, { AxiosInstance } from 'axios';
+import { TempMailOptions } from './types';
 
 export default class HttpClient {
 
@@ -15,20 +16,31 @@ export default class HttpClient {
 
     private readonly axiosInstance: AxiosInstance;
 
-    constructor() {
+    constructor(options?: TempMailOptions) {
         this.axiosInstance = axios.create({
-            timeout: 10_000,
+            timeout: options?.timeout ?? 10_000,
             baseURL: this.baseUrl,
             headers: this.defaultHeaders
         });
     }
 
-
-    async get<T>(url: string, params?: Record<string, any>): Promise<T> {
+    async get<T>(url: string, params?: Record<string, string>): Promise<T> {
         return this.axiosInstance.get<T>(url, { params })
             .then(response => response.data)
             .catch(error => {
                 console.error(`Error fetching data from ${url}:`, error);
+                throw error;
+            });
+    }
+
+    async delete<T>(url: string, body?: Record<string, string>): Promise<T> {
+        return this.axiosInstance.delete<T>(url, {
+            data: new URLSearchParams(body).toString(),
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' }
+        })
+            .then(response => response.data)
+            .catch(error => {
+                console.error(`Error deleting resource at ${url}:`, error);
                 throw error;
             });
     }
