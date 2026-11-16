@@ -25,7 +25,7 @@
   "author": "Halit Sever <halitsever@protonmail.com>",
   "description": "📨 API Wrapper for Temp Mail Plus service",
   "dependencies": {
-    "axios": "^1.11.0"
+    "axios": "^1.21.1"
   },
   "devDependencies": {
     "@types/node": "^24.2.1",
