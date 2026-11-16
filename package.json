@@ -28,7 +28,7 @@
     "axios": "^1.21.1"
   },
   "devDependencies": {
-    "@types/node": "^24.2.1",
+    "@types/node": "^26.6.6",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3"
   }
