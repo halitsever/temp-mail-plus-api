@@ -87,7 +87,7 @@ Custom timeout (default: 10s):
 const tempMail = new TempMail("halit@rover.info", { timeout: 5000 });
 ```
 
-<p align="center" href="https://github.com/halitsever/repo_name/issues">
+<p align="center" href="https://github.com/halitsever/temp-mail-plus-api/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
 </p>
 
