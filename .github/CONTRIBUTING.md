@@ -16,7 +16,7 @@ Open an issue with the **Feature request** template. Start with the problem you'
 
 1. Fork the repository and create a branch from `main`, for example `fix/empty-config`.
 2. Keep the change focused. One fix or feature per pull request is easier to review.
-3. Format your code with Prettier: `npx prettier --write .`
+3. Format only the files you change, for example `npx prettier --write <file>`. Most of the existing code is not Prettier-formatted yet.
 4. Update tests and docs if the change affects behavior.
 5. Write commit messages in the [Conventional Commits](https://www.conventionalcommits.org/) style, for example `fix: handle empty config file`.
 6. Open the pull request against `main`, fill in the template and link the issue it closes.
