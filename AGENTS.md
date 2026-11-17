@@ -10,7 +10,7 @@ temp-mail-plus-api is an unofficial Node.js and TypeScript client for the Temp M
 ## Gotchas
 
 - `tsconfig.json` has no `include` or `rootDir`, so `tsc` compiles `src/` and `test/` into `dist/src` and `dist/test`. `index.js` and the `types` field point into `dist/src`, so keep that layout. `dist/` is gitignored.
-- `index.js` is a hand-written CommonJS wrapper: `require()` gets the class directly, and `TEMP_MAIL_DOMAINS` hangs off it. Native Node ESM can only use the default import; `import { TEMP_MAIL_DOMAINS }` throws there, so use `TempMail.TEMP_MAIL_DOMAINS`.
+- `index.js` is a hand-written CommonJS wrapper: `require()` gets the class directly, and `TEMP_MAIL_DOMAINS` hangs off it. Native Node ESM finds named exports only through `module.exports.X =` lines (cjs-module-lexer), so add new exports that way. `test/package-entry.test.ts` packs the package and checks both `import` and `require()`, which is why `npm test` needs `npm run build` first.
 - API methods resolve to `{ success: false, error }` instead of throwing. Only the constructor and `setEmail` throw, on an address without `@`.
 - Code in `src/` and `test/` uses 4-space indentation while `.prettierrc` sets 2. Match the surrounding file and format only what you add.
 - The request headers in `src/http.client.ts` imitate a desktop Chrome browser. Change them only on purpose.
