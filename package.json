@@ -5,25 +5,36 @@
   "types": "dist/src/index.d.ts",
   "files": ["dist", "index.js"],
   "license": "MIT",
-  "repository": "https://github.com/halitsever/temp-mail-plus-api.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halitsever/temp-mail-plus-api.git"
+  },
+  "homepage": "https://github.com/halitsever/temp-mail-plus-api#readme",
+  "bugs": {
+    "url": "https://github.com/halitsever/temp-mail-plus-api/issues"
+  },
   "scripts": {
     "build": "tsc",
     "test": "node --import  tsx  --test test/*.ts"
   },
   "keywords": [
     "temp-mail",
-    "temp",
-    "mail",
-    "temporary-mail",
-    "temporary-mail-api",
-    "temporary-mail-api-wrapper",
-    "plus",
     "tempmail",
+    "temp-mail-plus",
     "tempmail-plus",
-    "tempmailplus"
+    "tempmailplus",
+    "temporary-mail",
+    "temporary-email",
+    "disposable-email",
+    "throwaway-email",
+    "temp-mail-api",
+    "temporary-mail-api",
+    "api-wrapper",
+    "unofficial",
+    "typescript"
   ],
   "author": "Halit Sever <halitsever@protonmail.com>",
-  "description": "📨 API Wrapper for Temp Mail Plus service",
+  "description": "Unofficial Node.js and TypeScript API wrapper for Temp Mail Plus (tempmail.plus) disposable email. Not affiliated with Temp Mail Plus.",
   "dependencies": {
     "axios": "^1.21.1"
   },
