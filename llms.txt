@@ -1,0 +1,18 @@
+# temp-mail-plus-api
+
+> Unofficial Node.js and TypeScript API wrapper for Temp Mail Plus (tempmail.plus), a disposable temporary email service. It creates throwaway addresses, reads the inbox, fetches and deletes mails. Not affiliated with Temp Mail Plus.
+
+Install with `npm install temp-mail-plus-api`. The package is CommonJS: use `const TempMail = require("temp-mail-plus-api")` or a default import, and read the domain list from `TempMail.TEMP_MAIL_DOMAINS`. Methods return `{ success: false, error }` on failure instead of throwing.
+
+## Docs
+
+- [README](https://github.com/halitsever/temp-mail-plus-api/blob/main/Readme.md): install, generating addresses, fetching the inbox, reading and deleting mails, timeout option
+- [Client source](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/index.ts): the `TempMail` class, `generateEmail`, `fetchInbox`, `fetchMailById`, `deleteMailById` and `TEMP_MAIL_DOMAINS`
+- [Types](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/types.ts): response shapes for inbox, mail and delete calls, and the options type
+- [HTTP client](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/http.client.ts): base URL, request headers and the 10 second default timeout
+
+## Optional
+
+- [Source](https://github.com/halitsever/temp-mail-plus-api): repository
+- [npm](https://www.npmjs.com/package/temp-mail-plus-api): package page
+- [License](https://github.com/halitsever/temp-mail-plus-api/blob/main/LICENSE): MIT
