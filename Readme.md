@@ -1,16 +1,19 @@
 <p align="center" class="logo-section">
-<img src="https://i.ibb.co/j9FFpf8p/image.png" height="80" width="80"/>
+<img src="https://i.ibb.co/j9FFpf8p/image.png" height="80" width="80" alt="Temp Mail Plus API logo"/>
 </br>
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Temp+Mail+Plus+API">
 
 <p align="center">
-📨 API Wrapper for Temp Mail Plus service<br>
+📨 Unofficial Node.js and TypeScript API wrapper for the Temp Mail Plus (tempmail.plus) disposable email service.<br>
+Create temporary email addresses, read the inbox and delete mails from your code.<br>
+This is a community project. It is not affiliated with or endorsed by Temp Mail Plus.<br>
 <br/>
 <br/>
-<img src="https://img.shields.io/github/sponsors/halitsever"/>
+<img src="https://img.shields.io/github/sponsors/halitsever" alt="GitHub sponsors"/>
+<a href="https://www.npmjs.com/package/temp-mail-plus-api"><img src="https://img.shields.io/npm/v/temp-mail-plus-api" alt="npm version"/></a>
 </p>
 <p align="center">
-<a align="center" href="#">Documentation</a>
+<a align="center" href="https://www.npmjs.com/package/temp-mail-plus-api">Documentation</a>
   </p>
 </p>
 
@@ -21,10 +24,17 @@
 - 💌 [**Create temp mails**](#) - via temp mail plus
 - 📩 [**Easy usage**](#) - Create & read temp mails easily
 - 🗑️ [**Delete mails**](#) - Delete individual mails from your inbox
+- [**TypeScript types**](#) - Type definitions ship with the package, and it works with both `import` and `require()`
 
 <p align="center" >
 <img src="https://halitsever-api.vercel.app/api/installation"/>
 </p>
+
+Install from npm:
+
+```bash
+npm install temp-mail-plus-api
+```
 
 Generate a random email address:
 
@@ -79,6 +89,11 @@ const tempMail = new TempMail("halit@rover.info", { timeout: 5000 });
 
 <p align="center" href="https://github.com/halitsever/repo_name/issues">
 <img src="https://halitsever-api.vercel.app/api/issue"/>
+</p>
+
+<p align="center">
+Found a bug or have an idea? Open an <a href="https://github.com/halitsever/temp-mail-plus-api/issues">issue</a>.<br/>
+Read the <a href=".github/CONTRIBUTING.md">contributing guide</a> before sending a pull request.
 </p>
 
 <p align="center">
