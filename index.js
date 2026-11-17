@@ -1,4 +1,4 @@
 const mod = require('./dist/src/index.js');
-const TempMail = mod.default;
-TempMail.TEMP_MAIL_DOMAINS = mod.TEMP_MAIL_DOMAINS;
-module.exports = TempMail;
+module.exports = mod.default;
+/** Written as `module.exports.X =` so Node's ESM loader detects it as a named export. */
+module.exports.TEMP_MAIL_DOMAINS = mod.TEMP_MAIL_DOMAINS;
