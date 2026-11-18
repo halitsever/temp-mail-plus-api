@@ -1,6 +1,6 @@
 # temp-mail-plus-api
 
-> Unofficial Node.js and TypeScript API wrapper for Temp Mail Plus (tempmail.plus), a disposable temporary email service. It creates throwaway addresses, reads the inbox, fetches and deletes mails. Not affiliated with Temp Mail Plus.
+> Unofficial Temp Mail Plus API client for Node.js and TypeScript: a temp mail API wrapper for tempmail.plus, a disposable temporary email service. It creates throwaway addresses, reads the inbox, fetches and deletes mails. Not affiliated with Temp Mail Plus.
 
 Install with `npm install temp-mail-plus-api`. The package is CommonJS: use `const TempMail = require("temp-mail-plus-api")` or a default import, and read the domain list from `TempMail.TEMP_MAIL_DOMAINS`. Methods return `{ success: false, error }` on failure instead of throwing.
 

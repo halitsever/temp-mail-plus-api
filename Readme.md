@@ -4,9 +4,9 @@
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Temp+Mail+Plus+API">
 
 <p align="center">
-📨 Unofficial Node.js and TypeScript API wrapper for the Temp Mail Plus (tempmail.plus) disposable email service.<br>
-Create temporary email addresses, read the inbox and delete mails from your code.<br>
-This is a community project. It is not affiliated with or endorsed by Temp Mail Plus.<br>
+📨 Unofficial Temp Mail Plus API client for Node.js and TypeScript.<br>
+A temp mail API wrapper for tempmail.plus: create temporary email addresses, read the inbox and delete mails from your code.<br>
+<b>Unofficial community project. Not affiliated with or endorsed by Temp Mail Plus.</b><br>
 <br/>
 <br/>
 <img src="https://img.shields.io/github/sponsors/halitsever" alt="GitHub sponsors"/>
@@ -35,6 +35,8 @@ Install from npm:
 ```bash
 npm install temp-mail-plus-api
 ```
+
+### Temporary email API usage
 
 Generate a random email address:
 
