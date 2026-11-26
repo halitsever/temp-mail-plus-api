@@ -4,7 +4,7 @@
 <img src="https://halitsever-api.vercel.app/api/repo-title?title=Temp+Mail+Plus+API">
 
 <p align="center">
-📨 Unofficial Temp Mail Plus API client for Node.js and TypeScript.<br>
+Unofficial Temp Mail Plus API client for Node.js and TypeScript.<br>
 A temp mail API wrapper for tempmail.plus: create temporary email addresses, read the inbox and delete mails from your code.<br>
 <b>Unofficial community project. Not affiliated with or endorsed by Temp Mail Plus.</b><br>
 <br/>
@@ -21,9 +21,9 @@ A temp mail API wrapper for tempmail.plus: create temporary email addresses, rea
 <img src="https://halitsever-api.vercel.app/api/details"/>
 </p>
 
-- 💌 [**Create temp mails**](#) - via temp mail plus
-- 📩 [**Easy usage**](#) - Create & read temp mails easily
-- 🗑️ [**Delete mails**](#) - Delete individual mails from your inbox
+- [**Create temp mails**](#) - via temp mail plus
+- [**Easy usage**](#) - Create & read temp mails easily
+- [**Delete mails**](#) - Delete individual mails from your inbox
 - [**TypeScript types**](#) - Type definitions ship with the package, and it works with both `import` and `require()`
 
 <p align="center" >
