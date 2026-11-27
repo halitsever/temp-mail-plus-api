@@ -1,0 +1,108 @@
+:root {
+  --paper: #f4eee1;
+  --paper-deep: #ebe3d1;
+  --sheet: #fcf9f2;
+  --ink: #262e3a;
+  --slate: #2f3745;
+  --ink-soft: #595e66;
+  --rule: #d8cfba;
+  --air-red: #c8322b;
+  --air-blue: #1b56a0;
+
+  --vp-font-family-base: 'Familjen Grotesk Variable', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --vp-c-bg: var(--paper);
+  --vp-c-bg-alt: var(--paper-deep);
+  --vp-c-bg-soft: var(--paper-deep);
+  --vp-c-bg-elv: var(--sheet);
+  --vp-c-text-1: var(--ink);
+  --vp-c-text-2: var(--ink-soft);
+  --vp-c-text-3: #7a7668;
+  --vp-c-divider: var(--rule);
+  --vp-c-gutter: var(--rule);
+  --vp-c-border: #c9bfa8;
+
+  --vp-c-brand-1: var(--air-blue);
+  --vp-c-brand-2: #164785;
+  --vp-c-brand-3: var(--air-blue);
+  --vp-c-brand-soft: rgba(27, 86, 160, 0.12);
+
+  --vp-nav-bg-color: var(--paper);
+  --vp-sidebar-bg-color: var(--paper);
+  --vp-local-search-bg: var(--sheet);
+
+  --vp-code-color: var(--ink);
+  --vp-code-bg: rgba(47, 55, 69, 0.1);
+  --vp-code-block-bg: var(--slate);
+  --vp-code-block-color: #e8e4da;
+  --vp-code-lang-color: #aab1bc;
+  --vp-code-copy-code-bg: #3a4352;
+  --vp-code-copy-code-hover-bg: #465062;
+  --vp-code-copy-code-border-color: #4c566a;
+  --vp-code-copy-code-hover-border-color: #5b667a;
+  --vp-code-copy-code-active-text: #e8e4da;
+  --vp-code-line-highlight-color: rgba(255, 255, 255, 0.08);
+
+  --vp-custom-block-info-bg: var(--paper-deep);
+  --vp-custom-block-tip-bg: rgba(27, 86, 160, 0.09);
+  --vp-custom-block-tip-border: rgba(27, 86, 160, 0.3);
+  --vp-custom-block-tip-text: var(--ink);
+  --vp-custom-block-warning-bg: rgba(200, 50, 43, 0.08);
+  --vp-custom-block-warning-border: rgba(200, 50, 43, 0.35);
+  --vp-custom-block-warning-text: var(--ink);
+}
+
+body {
+  font-size: 17px;
+}
+
+.VPNavBar .title {
+  font-family: var(--vp-font-family-mono);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: -0.02em;
+}
+.vp-doc h1 {
+  font-weight: 700;
+  line-height: 1.12;
+}
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.7;
+}
+.vp-doc a {
+  text-underline-offset: 3px;
+}
+.vp-doc :not(pre) > code {
+  font-size: 0.86em;
+}
+.vp-doc table {
+  font-size: 0.9375rem;
+}
+.vp-doc th {
+  background: var(--paper-deep);
+}
+.vp-doc tr,
+.vp-doc tr:nth-child(2n) {
+  background: transparent;
+}
+.vp-doc [class*='language-'] code {
+  font-size: 0.8125rem;
+}
+
+/* Lets the landing run edge to edge under the nav. */
+.VPContent:has(.tm) .VPPage {
+  padding: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--air-blue);
+  outline-offset: 2px;
+}
