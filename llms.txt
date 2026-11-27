@@ -6,6 +6,7 @@ Install with `npm install temp-mail-plus-api`. The package is CommonJS: use `con
 
 ## Docs
 
+- [Website](https://halitsever.github.io/temp-mail-plus-api/): getting started, API reference with return shapes, email testing guide, FAQ and limits
 - [README](https://github.com/halitsever/temp-mail-plus-api/blob/main/Readme.md): install, generating addresses, fetching the inbox, reading and deleting mails, timeout option
 - [Client source](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/index.ts): the `TempMail` class, `generateEmail`, `fetchInbox`, `fetchMailById`, `deleteMailById` and `TEMP_MAIL_DOMAINS`
 - [Types](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/types.ts): response shapes for inbox, mail and delete calls, and the options type

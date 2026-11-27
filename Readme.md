@@ -13,7 +13,7 @@ A temp mail API wrapper for tempmail.plus: create temporary email addresses, rea
 <a href="https://www.npmjs.com/package/temp-mail-plus-api"><img src="https://img.shields.io/npm/v/temp-mail-plus-api" alt="npm version"/></a>
 </p>
 <p align="center">
-<a align="center" href="https://www.npmjs.com/package/temp-mail-plus-api">Documentation</a>
+<a align="center" href="https://halitsever.github.io/temp-mail-plus-api/">Documentation</a>
   </p>
 </p>
 
