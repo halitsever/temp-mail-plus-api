@@ -18,7 +18,7 @@ temp-mail-plus-api is an unofficial Node.js and TypeScript client for the Temp M
 
 ## Docs site
 
-- The website is a VitePress project in `docs/` with its own `package.json`. It deploys to https://halitsever.github.io/temp-mail-plus-api/ through `.github/workflows/docs.yml`.
+- The website is a VitePress project in `docs/` with its own `package.json`. It deploys to https://projects.halit.org/temp-mail-plus-api/ through `.github/workflows/docs.yml`.
 - Build it with `cd docs && npm ci && npm run build`. Preview with `npm run dev`.
 - Pages document only what exists in `src/`. Update `docs/reference/api.md` and the samples in `docs/.vitepress/theme/Landing.vue` when a method or a response type changes.
 - The inbox on the home page is a labelled illustration. It must never call tempmail.plus.

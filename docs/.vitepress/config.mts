@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 
-const site = 'https://halitsever.github.io/temp-mail-plus-api/'
+const site = 'https://projects.halit.org/temp-mail-plus-api/'
 const name = 'temp-mail-plus-api'
 const homeTitle = 'Temp mail API for Node.js and TypeScript'
 const description = 'Temp mail API client for Node.js and TypeScript. Create disposable addresses, read the inbox and delete mails on tempmail.plus. Unofficial, MIT licensed.'
@@ -36,7 +36,7 @@ export default defineConfig({
   sitemap: { hostname: site },
 
   head: [
-    /** Cloudflare Web Analytics, one token for every page on halitsever.github.io. */
+    /** Cloudflare Web Analytics, one token for every page on projects.halit.org. */
     ['script', { defer: '', src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token": "dd7e54d3f48841c187d72d9dbb92a6b6"}' }],
     ['link', { rel: 'icon', href: '/temp-mail-plus-api/favicon.png', sizes: '32x32', type: 'image/png' }],
     ['link', { rel: 'icon', href: '/temp-mail-plus-api/favicon.svg', type: 'image/svg+xml' }],
