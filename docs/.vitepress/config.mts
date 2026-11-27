@@ -24,6 +24,8 @@ const jsonLd = {
 }
 
 export default defineConfig({
+  /** keeps the page hash map out of every page's HTML, which Semrush reads as a low text-to-HTML ratio */
+  metaChunk: true,
   base: '/temp-mail-plus-api/',
   lang: 'en',
   title: name,
