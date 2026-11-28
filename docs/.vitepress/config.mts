@@ -139,6 +139,12 @@ export default defineConfig({
             { text: 'What is Temp Mail Plus?', link: '/blog/what-is-temp-mail-plus' },
             { text: 'Python vs Node.js', link: '/blog/temp-mail-api-python' },
             { text: 'Test a signup email flow', link: '/blog/test-signup-email-flow' },
+            { text: 'encodeURIComponent', link: '/blog/encodeuricomponent' },
+            { text: 'URLSearchParams', link: '/blog/urlsearchparams' },
+            { text: 'x-www-form-urlencoded', link: '/blog/x-www-form-urlencoded' },
+            { text: 'Email validation in JavaScript', link: '/blog/email-validation-javascript' },
+            { text: 'Axios timeout', link: '/blog/axios-timeout' },
+            { text: 'Sec-CH-UA header', link: '/blog/sec-ch-ua' },
           ],
         },
         {

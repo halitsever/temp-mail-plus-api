@@ -1,7 +1,7 @@
 ---
 title: "Temp Mail and Email Testing Guides for Developers"
 titleTemplate: false
-description: "Guides on disposable email for developers: Gmail aliases, how temp mail services work, blocking disposable domains, Mailinator alternatives and signup tests."
+description: "Disposable email and HTTP guides for developers: temp mail services, blocking throwaway domains, signup tests, URL encoding, form bodies and axios timeouts."
 ---
 
 # Temp mail and email testing blog
@@ -39,3 +39,27 @@ Read a tempmail.plus inbox from Node.js with temp-mail-plus-api, and see what th
 ## [Test a signup email flow end to end](/blog/test-signup-email-flow)
 
 A Playwright test that signs up with a fresh disposable address, polls the inbox with expect.poll, opens the confirmation link and cleans up after itself.
+
+## [What encodeURIComponent escapes, and the bug it prevents](/blog/encodeuricomponent)
+
+What encodeURIComponent escapes and what it leaves alone, how it differs from encodeURI, and how a plus sign in an email address breaks an unencoded query.
+
+## [Building and parsing query strings with URLSearchParams](/blog/urlsearchparams)
+
+How URLSearchParams builds and parses query strings in JavaScript and Node.js: append, get, set, toString, why + turns into a space, and form bodies.
+
+## [How a form-urlencoded request body is built](/blog/x-www-form-urlencoded)
+
+What application/x-www-form-urlencoded means, how keys and values are encoded, how it differs from JSON and multipart, and how to send it with fetch or axios.
+
+## [Checking an email address in JavaScript, and where to stop](/blog/email-validation-javascript)
+
+Email validation in JavaScript with the regex browsers use for type=email, tested on real inputs, plus why a format check never proves the address exists.
+
+## [Setting a timeout in axios and handling the error](/blog/axios-timeout)
+
+Axios timeout explained: the default of 0, setting it on an instance or one request, the ECONNABORTED error it throws, and AbortSignal for a total time limit.
+
+## [Reading the Sec-CH-UA client hint, with real request headers](/blog/sec-ch-ua)
+
+What the Sec-CH-UA header contains, why it lists a fake brand, which hints Chrome sends without Accept-CH, and how to set these headers in axios from Node.js.
