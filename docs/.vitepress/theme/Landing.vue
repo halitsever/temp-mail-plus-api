@@ -314,6 +314,18 @@ async function copyInstall() {
       </div>
     </section>
 
+    <section class="tm-band tm-wrap">
+      <h2>Guides and articles</h2>
+      <div class="tm-band-body">
+        <p>
+          A <a :href="withBase('/node-temp-mail/')">ten-line free temp mail starter for Node.js</a>, and a blog on
+          disposable email for developers: Gmail aliases, blocking throwaway domains, Mailinator alternatives and
+          end-to-end signup tests.
+        </p>
+        <a class="tm-link" :href="withBase('/blog/')">Read the blog</a>
+      </div>
+    </section>
+
     <div class="tm-wrap">
       <SiteFooter />
     </div>
@@ -713,6 +725,11 @@ async function copyInstall() {
   margin: 0 0 24px;
   font-size: 1.0625rem;
   line-height: 1.65;
+}
+.tm-band-body > p a {
+  color: var(--air-blue);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 .tm-band-body > .tm-code {
   margin-bottom: 24px;

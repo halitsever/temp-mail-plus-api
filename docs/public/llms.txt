@@ -1,0 +1,29 @@
+# temp-mail-plus-api
+
+> Unofficial Temp Mail Plus API client for Node.js and TypeScript: a temp mail API wrapper for tempmail.plus, a disposable temporary email service. It creates throwaway addresses, reads the inbox, fetches and deletes mails. Not affiliated with Temp Mail Plus.
+
+Install with `npm install temp-mail-plus-api`. The package is CommonJS: use `const TempMail = require("temp-mail-plus-api")` or a default import, and read the domain list from `TempMail.TEMP_MAIL_DOMAINS`. Methods return `{ success: false, error }` on failure instead of throwing.
+
+## Docs
+
+- [Website](https://projects.halit.org/temp-mail-plus-api/): getting started, API reference with return shapes, email testing guide, FAQ and limits
+- [Free temp mail API for Node.js](https://projects.halit.org/temp-mail-plus-api/node-temp-mail/): a ten-line script that creates an address, reads the inbox and deletes a mail, with no API key
+- [Blog](https://projects.halit.org/temp-mail-plus-api/blog/): articles on disposable email for developers
+- [Gmail temp mail](https://projects.halit.org/temp-mail-plus-api/blog/gmail-temp-mail): plus addressing and dot aliases compared with a disposable inbox
+- [How free disposable email services work](https://projects.halit.org/temp-mail-plus-api/blog/free-disposable-email): domains, MX records, mailbox lifetimes and public inboxes
+- [Detect disposable email domains in Node.js](https://projects.halit.org/temp-mail-plus-api/blog/detect-disposable-email-domains): deriving the domain from an address and matching a blocklist with parent domains
+- [Mailinator alternatives for testing](https://projects.halit.org/temp-mail-plus-api/blog/mailinator-alternatives): capture tools and receiving inboxes, from each vendor's site
+- [temp-mail.org API compared](https://projects.halit.org/temp-mail-plus-api/blog/temp-mail-org-api): the RapidAPI temp-mail.org API next to this unofficial client
+- [What is Temp Mail Plus](https://projects.halit.org/temp-mail-plus-api/blog/what-is-temp-mail-plus): the service as its own site describes it and how the client reads it
+- [Python vs Node.js](https://projects.halit.org/temp-mail-plus-api/blog/temp-mail-api-python): the same three tempmail.plus requests from Python and Node.js
+- [Test a signup email flow end to end](https://projects.halit.org/temp-mail-plus-api/blog/test-signup-email-flow): a Playwright test with expect.poll and the confirmation link
+- [README](https://github.com/halitsever/temp-mail-plus-api/blob/main/Readme.md): install, generating addresses, fetching the inbox, reading and deleting mails, timeout option
+- [Client source](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/index.ts): the `TempMail` class, `generateEmail`, `fetchInbox`, `fetchMailById`, `deleteMailById` and `TEMP_MAIL_DOMAINS`
+- [Types](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/types.ts): response shapes for inbox, mail and delete calls, and the options type
+- [HTTP client](https://github.com/halitsever/temp-mail-plus-api/blob/main/src/http.client.ts): base URL, request headers and the 10 second default timeout
+
+## Optional
+
+- [Source](https://github.com/halitsever/temp-mail-plus-api): repository
+- [npm](https://www.npmjs.com/package/temp-mail-plus-api): package page
+- [License](https://github.com/halitsever/temp-mail-plus-api/blob/main/LICENSE): MIT
