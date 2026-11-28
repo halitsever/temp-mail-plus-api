@@ -106,3 +106,13 @@ body {
   outline: 2px solid var(--air-blue);
   outline-offset: 2px;
 }
+
+.vp-doc .lead {
+  font-size: 1.125rem;
+  color: var(--vp-c-text-1);
+}
+.vp-doc .post-meta {
+  margin-top: 12px;
+  font-size: 0.875rem;
+  color: var(--vp-c-text-2);
+}
