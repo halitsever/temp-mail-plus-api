@@ -109,4 +109,5 @@ The client has no webhook or stream. Polling with expect.poll is the simplest re
 - [How to detect disposable email domains in Node.js](/blog/detect-disposable-email-domains)
 - [Mailinator alternatives for testing signup emails](/blog/mailinator-alternatives)
 - [Calling the Temp Mail Plus endpoints from Python and Node.js](/blog/temp-mail-api-python)
+- [Setting a timeout in axios and handling the error](/blog/axios-timeout)
 - [All posts](/blog/)

@@ -94,4 +94,5 @@ The site lets you choose 10 minutes, 60 minutes, 2 days or 7 days. The client ha
 - [Gmail temp mail: plus aliases, dots or a separate inbox](/blog/gmail-temp-mail)
 - [How free disposable email services work](/blog/free-disposable-email)
 - [temp-mail.org API compared with the Temp Mail Plus client](/blog/temp-mail-org-api)
+- [What encodeURIComponent escapes, and the bug it prevents](/blog/encodeuricomponent)
 - [All posts](/blog/)

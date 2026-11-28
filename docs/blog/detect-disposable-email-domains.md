@@ -126,4 +126,5 @@ Some vendors offer one, but a local copy of an open list has no network call and
 - [How free disposable email services work](/blog/free-disposable-email)
 - [Mailinator alternatives for testing signup emails](/blog/mailinator-alternatives)
 - [Test a signup email flow end to end](/blog/test-signup-email-flow)
+- [Checking an email address in JavaScript, and where to stop](/blog/email-validation-javascript)
 - [All posts](/blog/)
